@@ -1,7 +1,7 @@
 # EngineeringMath1NHU4126
 Engineering Mathematics 
 
-The last four digits of my student id is 4126.
+The last four digits of my Student ID are 4126.
 (caution: this project is not dedicated for any rigorous contribution but as a project for learning only.)
 
 ## Title: Engineering Mathematics Assignment 作業
