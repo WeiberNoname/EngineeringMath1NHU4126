@@ -6,8 +6,14 @@ The last four digits of my Student ID are 4126.
 
 ## Title: Engineering Mathematics Assignment 作業
 
-### 西元2026年 3月 20日 14時30分 
+### 西元2026年 3月 20日 14時30分  
 
 Project name: C2工程數學1   資工A 魏伯勳  10424126
 
 Description: 作業初版已作業完成，檔案為PDF格式，如有疑問，請不吝請教，謝謝。
+
+### 西元2026年 3月 22日 13時08分 second edition
+
+Project name: C3工程數學1   資工A 魏伯勳  10424126
+
+Description: 新增手寫解題過程。
