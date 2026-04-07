@@ -17,3 +17,9 @@ Description: 作業初版已作業完成，檔案為PDF格式。
 Project name: C3工程數學1   資工A 魏伯勳  10424126
 
 Description: 新增手寫解題過程。
+
+### 西元2026年 3月 22日 22時29分 first edition
+
+Project name: Create 0407Presentation.md
+
+Description: 期中報告, 第一版。
