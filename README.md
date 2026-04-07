@@ -20,6 +20,6 @@ Description: 新增手寫解題過程。
 
 ### 西元2026年 3月 22日 22時29分 first edition
 
-Project name: Create 0407Presentation.md
+Project name: 0407Presentation.md
 
 Description: 期中報告, 第一版。
