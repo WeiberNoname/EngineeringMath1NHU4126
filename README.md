@@ -18,7 +18,7 @@ Project name: C3工程數學1   資工A 魏伯勳  10424126
 
 Description: 新增手寫解題過程。
 
-### 西元2026年 3月 22日 22時29分 first edition
+### 西元2026年 4月 7日 22時29分 first edition
 
 Project name: 0407Presentation.md
 
