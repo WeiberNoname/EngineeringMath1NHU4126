@@ -24,7 +24,7 @@ Project name: 0407Presentation.md
 
 Description: 期中報告, 第一版。
 
-### 西元2026年 5月 31日 12時50分 first edition
+### 西元2026年 5月 31日 13時17分 first edition
 
 Project name: 0527Assignment02.md
 
