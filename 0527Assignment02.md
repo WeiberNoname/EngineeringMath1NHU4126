@@ -19,6 +19,9 @@ Apply the Laplace transform to both sides:
 
 $$\left(s^2X(s) - sx(0) - x'(0)\right) - 3\left(sX(s) - x(0)\right) + 2X(s) = 1$$
 
+**Note:** s is s-domain.
+
+
 ---
 
 ### Step 2:
@@ -40,12 +43,16 @@ Expand using **Partial Fraction Decomposition**:
 
 $$X(s) = \frac{1}{s - 2} - \frac{1}{s - 1}$$
 
+**Note:** $$s1 = 2(\frac{1}{s - 2}), s2 = 1(\frac{1}{s - 1}$$), these two numbers will be used in the next step.()
+
 ---
 
 ### Step 5:
 Convert back to the time domain using the standard transform table:
 
 $$x(t) = e^{2t} - e^t$$
+
+**Note:** t is time domain. Apply S1 and S2 together with e and the exponent t.
 
 ---
 
@@ -61,8 +68,6 @@ $$x(t) = e^{2t} - e^t \quad (t \ge 0)$$
 Find the **Fourier Transform** of the function:
 
 $$f(t) = t e^{-5t} u(t)$$
-
-*(Note: For the Fourier Transform to converge, this physical system is assumed causal, meaning it is evaluated for $t \ge 0$, represented by the unit step function $u(t)$).*
 
 ---
 
@@ -80,7 +85,7 @@ $$\mathcal{F}\{e^{-5t} u(t)\} = \frac{1}{5 + j\omega}$$
 ---
 
 ### Step 2: Frequency Differentiation Property
-Using the multiplication-by-$t$ property of the Fourier Transform:
+Using the Fourier Transform:
 
 $$\mathcal{F}\{t \cdot f(t)\} = j \frac{d}{d\omega} F(\omega)$$
 
