@@ -29,3 +29,9 @@ Description: 期中報告, 第一版。
 Project name: 0527Assignment02.md
 
 Description: 第二次作業。
+
+### 西元2026年 6月 13日 15時57分 first edition
+
+Project name: 0613Presentation02.md
+
+Description: 第二次報告。
