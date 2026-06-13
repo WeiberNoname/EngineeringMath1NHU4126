@@ -1,3 +1,42 @@
+# Math Only
+
+$$\begin{cases} 
+T = 0.02\text{ s} \\ 
+\omega = \frac{2\pi}{T} = 100\pi\text{ rad/s} \\ 
+I_d = 100\text{ A} 
+\end{cases}$$
+
+$$i(t) = \begin{cases} I_d, & 0 < t < \frac{T}{2} \\ -I_d, & \frac{T}{2} < t < T \end{cases}$$
+
+$$i(t) = \frac{a_0}{2} + \sum_{n=1}^{\infty} [a_n \cos(n\omega t) + b_n \sin(n\omega t)]$$
+
+$$i(-t) = -i(t) \implies a_0 = 0, \quad a_n = 0$$
+
+$$b_n = \frac{4}{T} \int_{0}^{\frac{T}{2}} I_d \sin(n\omega t) \, dt$$
+
+$$b_n = \frac{4I_d}{T} \left[ -\frac{1}{n\omega} \cos(n\omega t) \right]_{0}^{\frac{T}{2}}$$
+
+$$b_n = \frac{4I_d}{T} \cdot \frac{T}{2n\pi} [ -\cos(n\pi) + \cos(0) ]$$
+
+$$b_n = \frac{2I_d}{n\pi} [1 - \cos(n\pi)]$$
+
+$$b_n = \begin{cases} 0, & n = 2, 4, 6, \dots \\ \frac{4I_d}{n\pi}, & n = 1, 3, 5, \dots \end{cases}$$
+
+$$i(t) = \sum_{n=1,3,5,\dots}^{\infty} \frac{4I_d}{n\pi} \sin(n\omega t)$$
+
+$$i(t) = \frac{400}{\pi} \sin(100\pi t) + \frac{400}{3\pi} \sin(300\pi t) + \frac{400}{5\pi} \sin(500\pi t) + \dots$$
+
+$$I_{nm} = \frac{4I_d}{n\pi}$$
+
+$$I_n = \frac{I_{nm}}{\sqrt{2}} = \frac{2\sqrt{2}I_d}{n\pi} \approx \frac{0.9}{n} I_d$$
+
+$$\begin{cases}
+I_1 \approx 0.9 \times 100\text{ A} = 90\text{ A} \\
+I_3 \approx \frac{90}{3}\text{ A} = 30\text{ A} \\
+I_5 \approx \frac{90}{5}\text{ A} = 18\text{ A}
+\end{cases}$$
+
+
 
 # Fourier Series Analysis: Power System Harmonic Analysis
 
@@ -69,3 +108,28 @@ Based on the Fourier series expansion results, we can summarize the harmonic cha
    * **Fundamental RMS ($n=1$)**: $I_1 \approx 0.9 \times 100\text{ A} = 90\text{ A}$
    * **$3^{\text{rd}}$ Harmonic RMS ($n=3$)**: $I_3 \approx 30\text{ A}$
    * **$5^{\text{th}}$ Harmonic RMS ($n=5$)**: $I_5 \approx 18\text{ A}$
+  
+| Harmonic Order ($n$) | Angular Frequency ($n\omega$) | Peak Amplitude ($I_{nm} = \frac{400}{n\pi}$) | RMS Value ($I_n \approx \frac{90}{n}$) | Status / Presence |
+| :--- | :--- | :--- | :--- | :--- |
+| **1 (Fundamental)** | $100\pi\text{ rad/s}$ | $\approx 127.32\text{ A}$ | $90.00\text{ A}$ | Present |
+| **2** | $200\pi\text{ rad/s}$ | $0\text{ A}$ | $0\text{ A}$ | Absent (Even Order) |
+| **3** | $300\pi\text{ rad/s}$ | $\approx 42.44\text{ A}$ | $30.00\text{ A}$ | Present |
+| **4** | $400\pi\text{ rad/s}$ | $0\text{ A}$ | $0\text{ A}$ | Absent (Even Order) |
+| **5** | $500\pi\text{ rad/s}$ | $\approx 25.46\text{ A}$ | $18.00\text{ A}$ | Present |
+| **6** | $600\pi\text{ rad/s}$ | $0\text{ A}$ | $0\text{ A}$ | Absent (Even Order) |
+| **7** | $700\pi\text{ rad/s}$ | $\approx 18.19\text{ A}$ | $\approx 12.86\text{ A}$ | Present |
+
+# Power System Harmonics: Key Terms Definition Reference
+
+| Term | Definition |
+| :--- | :--- |
+| **Fourier Series** | A mathematical method used to decompose any periodic waveform into a sum of simple sine and cosine waves. |
+| **Fundamental Frequency** | The lowest and dominant frequency of a periodic waveform (typically $50\text{ Hz}$ or $60\text{ Hz}$ in power grids), serving as the base reference. |
+| **Harmonic Order ($n$)** | An integer multiple of the fundamental frequency; for example, the $3^{\text{rd}}$ harmonic of a $50\text{ Hz}$ system is $150\text{ Hz}$. |
+| **Even Harmonics** | Harmonics with integer multiples that are even numbers ($2, 4, 6, \dots$). They are typically absent in symmetric AC waveforms. |
+| **Odd Harmonics** | Harmonics with integer multiples that are odd numbers ($3, 5, 7, \dots$). These are highly prevalent in power electronic rectifiers. |
+| **Half-Wave Symmetry** | A waveform property where the negative half-cycle is a mirror image of the positive half-cycle, resulting in the elimination of all even harmonics. |
+| **Total Harmonic Distortion (THD)** | A measurement used to quantify the thermal and wave deformation effects of all harmonic components relative to the fundamental frequency. |
+| **RMS Value (Root Mean Square)** | The effective value of an alternating current or voltage that represents its true power-delivery capability. |
+| **Rectifier** | An electrical device or circuit configuration that converts alternating current (AC) into direct current (DC). |
+| **Inductive Load** | An electrical load that utilizes magnetic fields (like motors or transformers), causing the current wave to lag behind the voltage wave. |
